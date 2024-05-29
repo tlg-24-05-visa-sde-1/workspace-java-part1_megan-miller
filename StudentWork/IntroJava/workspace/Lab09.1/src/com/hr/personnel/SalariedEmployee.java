@@ -1,11 +1,12 @@
 package com.hr.personnel;
 
+import gov.irs.TaxPayer;
+
 import java.time.LocalDate;
 
-public class SalariedEmployee extends Employee
-{
+public class SalariedEmployee extends Employee implements TaxPayer {
     // fields aka instance variables
-  private double salary;
+    private double salary;
 
     public SalariedEmployee()
     {
@@ -26,10 +27,18 @@ public class SalariedEmployee extends Employee
         setSalary(salary); // handle salary myself, by delegating to its setter
     }
 
+    // business methods
     @Override
     public void pay()
     {
         System.out.println(getName() + " is paid a salary of " + getSalary());
+    }
+
+    @Override
+    public void payTaxes()
+    {
+        double taxes = getSalary() * SALARIED_TAX_RATE;
+        System.out.println(getName() + " paid salary taxes of " + taxes);
     }
 
     public void takeVacation()
@@ -38,6 +47,7 @@ public class SalariedEmployee extends Employee
 
     }
 
+    // accessor methods
     public double getSalary()
     {
         return salary;

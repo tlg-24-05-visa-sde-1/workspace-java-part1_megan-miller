@@ -1,9 +1,13 @@
 package com.hr.personnel;
 
+import gov.irs.TaxPayer;
+
 import java.time.LocalDate;
 
-public class HourlyEmployee extends Employee
-{
+public class HourlyEmployee extends Employee implements TaxPayer {
+    // static fields aka instance variables
+    public static final double HOURLY_TAX_RATE = 0.25;
+
     // fields aka instance variables
     private double rate;
     private double hours;
@@ -30,6 +34,14 @@ public class HourlyEmployee extends Employee
     {
         System.out.println(getName() + " is paid hourly " + (getRate() * getHours()));
     }
+
+    @Override
+    public void payTaxes()
+    {
+        double taxes = getRate() * HOURLY_TAX_RATE;
+        System.out.println(getName() + " paid hourly taxes of " + taxes);
+    }
+
     //accessor methods
 
     public double getRate()
