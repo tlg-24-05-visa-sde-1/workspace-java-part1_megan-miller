@@ -10,7 +10,7 @@ package com.hr.personnel;
 
 import java.time.LocalDate;
 
-public class SalariedEmployee extends Employee {
+public class SalariedEmployee extends Employee  {
     // class constants
     public static final double STANDARD_DEDUCTION = 10_000.0;
 
