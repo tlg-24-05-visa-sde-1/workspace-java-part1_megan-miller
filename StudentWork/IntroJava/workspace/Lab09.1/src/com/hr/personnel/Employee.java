@@ -46,7 +46,7 @@ public abstract class Employee
         System.out.println(getName() + " working hard since " + getHireDate());
     }
 
-    // we need a pay method here to say all employees get paid but it cabn't be implemented from here
+    // we need a pay method here to say all employees get paid, but it can't be implemented from here
     public abstract void pay();
 
     // accessor methods

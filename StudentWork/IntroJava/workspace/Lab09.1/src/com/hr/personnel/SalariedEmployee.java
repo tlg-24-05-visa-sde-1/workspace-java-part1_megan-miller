@@ -34,7 +34,7 @@ public class SalariedEmployee extends Employee implements TaxPayer {
         System.out.println(getName() + " is paid a salary of " + getSalary());
     }
 
-    @Override
+    @Override  // interface TaxPayer
     public void payTaxes()
     {
         double taxes = getSalary() * SALARIED_TAX_RATE;
