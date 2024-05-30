@@ -7,6 +7,7 @@ import java.time.LocalDate;
 public class SalariedEmployee extends Employee implements TaxPayer {
     // fields aka instance variables
     private double salary;
+    public static final double STANDARD_DEDUCTION = 10_000.0;
 
     public SalariedEmployee()
     {
@@ -39,6 +40,12 @@ public class SalariedEmployee extends Employee implements TaxPayer {
     {
         double taxes = getSalary() * SALARIED_TAX_RATE;
         System.out.println(getName() + " paid salary taxes of " + taxes);
+    }
+
+    @Override
+    public double getStandardDeduction()
+    {
+        return STANDARD_DEDUCTION;
     }
 
     public void takeVacation()

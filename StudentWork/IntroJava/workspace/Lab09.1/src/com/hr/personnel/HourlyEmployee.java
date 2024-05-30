@@ -4,7 +4,7 @@ import gov.irs.TaxPayer;
 
 import java.time.LocalDate;
 
-public class HourlyEmployee extends Employee implements TaxPayer {
+public class HourlyEmployee extends Employee implements TaxPayer{
     // static fields aka instance variables
     public static final double HOURLY_TAX_RATE = 0.25;
 
@@ -29,11 +29,11 @@ public class HourlyEmployee extends Employee implements TaxPayer {
         setHours(hours);
     }
      // business methods
-    @Override
-    public void pay()
-    {
-        System.out.println(getName() + " is paid hourly " + (getRate() * getHours()));
-    }
+     @Override
+     public void pay()
+     {
+         System.out.println(getName() + " is paid hourly " + (getRate() * getHours()));
+     }
 
     @Override // interface TaxPayer
     public void payTaxes()

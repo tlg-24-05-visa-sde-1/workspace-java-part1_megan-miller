@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Executive extends SalariedEmployee
 {
+    public static final double STANDARD_DEDUCTION = 100_000.0;
 
     public Executive(String name, LocalDate hireDate, double salary)
     {
@@ -23,6 +24,8 @@ public class Executive extends SalariedEmployee
         System.out.println("Return filed electronically");
     }
 
-
-
+    @Override
+    public void generateStub()
+    {
+    }
 }
