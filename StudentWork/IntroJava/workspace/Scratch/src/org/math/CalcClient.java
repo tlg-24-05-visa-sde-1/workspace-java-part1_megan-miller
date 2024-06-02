@@ -1,3 +1,5 @@
+package org.math;
+
 class CalcClient {
     public static void main(String[] args) {
 

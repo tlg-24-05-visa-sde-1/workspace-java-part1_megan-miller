@@ -1,3 +1,5 @@
+package edu.wakeup;
+
 /*
  * Class definition to model the workings of an Alarm Clock
  * This is sometimes called a "Business Class" or "System Class"
@@ -44,7 +46,7 @@ class AlarmClock {
 
     @Override
     public String toString() {
-        return "AlarmClock{" +
+        return "edu.wakeup.AlarmClock{" +
                 "snoozeInterval=" + getSnoozeInterval() +
                 '}';
     }

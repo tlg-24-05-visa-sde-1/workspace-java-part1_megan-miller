@@ -1,3 +1,5 @@
+package net.flix;
+
 enum Genre {
     ROMANCE("Romance"),
     COMEDY("Comedy :)"),

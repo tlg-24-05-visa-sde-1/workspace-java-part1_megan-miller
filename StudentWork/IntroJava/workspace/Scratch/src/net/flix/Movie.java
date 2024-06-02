@@ -1,3 +1,5 @@
+package net.flix;
+
 class Movie {
     //instance variables or fields
     private String title;
@@ -75,7 +77,7 @@ class Movie {
 
     @Override
     public String toString() {
-        return "Movie{" +
+        return "net.flix.Movie{" +
                 "title='" + getTitle() + '\'' +
                 ", releaseYear=" + getReleaseYear() +
                 ", revenue=" + getRevenue() +

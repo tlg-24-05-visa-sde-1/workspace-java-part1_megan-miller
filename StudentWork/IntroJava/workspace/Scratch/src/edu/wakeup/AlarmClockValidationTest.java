@@ -1,3 +1,5 @@
+package edu.wakeup;
+
 /*
  * Main-class focused on testing setter validation logic.
  * Do thorough BVT (Boundary Value Testing) on setSnoozeInterval().

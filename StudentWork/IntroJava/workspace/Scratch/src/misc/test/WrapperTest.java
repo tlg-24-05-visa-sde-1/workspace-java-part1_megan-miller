@@ -1,3 +1,5 @@
+package misc.test;
+
 class WrapperTest {
 
     public static void main(String[] args) {

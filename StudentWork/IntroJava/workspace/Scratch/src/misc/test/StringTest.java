@@ -1,3 +1,5 @@
+package misc.test;
+
 class StringTest {
     public static void main(String[] args) {
         String city1 = "new york";

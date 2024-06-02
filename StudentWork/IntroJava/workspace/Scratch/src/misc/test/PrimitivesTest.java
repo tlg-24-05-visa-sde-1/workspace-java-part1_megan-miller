@@ -1,3 +1,5 @@
+package misc.test;
+
 class PrimitivesTest {
     public static void main(String[] args) {
         int age = 35;

@@ -1,6 +1,8 @@
+package org.math;
+
 /*
  * This is an "all-static" class, i/e/, one with nothing but static methods
- * These methods are called from clients as Calulator.add(), Calculator.subtract(), etc.
+ * These methods are called from clients as Calulator.add(), org.math.Calculator.subtract(), etc.
  */
 class Calculator {
 

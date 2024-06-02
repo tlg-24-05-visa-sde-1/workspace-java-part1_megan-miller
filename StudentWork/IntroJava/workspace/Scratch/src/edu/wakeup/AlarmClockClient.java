@@ -1,10 +1,12 @@
+package edu.wakeup;
+
 /*
  * Client-side "main-class" (class definition with the main() method.
- * It will create a few instances of AlarmClock, and give them a basic test drive.
+ * It will create a few instances of edu.wakeup.AlarmClock, and give them a basic test drive.
  */
 class AlarmClockClient {
     public static void main(String[] args) {
-        // creates AlarmClock object and set its properties.
+        // creates edu.wakeup.AlarmClock object and set its properties.
         AlarmClock a1 = new AlarmClock();
         a1.setSnoozeInterval(7);
 
