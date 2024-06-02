@@ -1,5 +1,8 @@
 package org.math;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class CalcClient {
     public static void main(String[] args) {
 
@@ -17,5 +20,12 @@ class CalcClient {
         System.out.println(Calculator.randomInt());
 
         System.out.println(Calculator.randomInt(7,26));
+
+        List<Integer> inputs = new ArrayList<>();
+        inputs.add(5);
+        inputs.add(7);
+        inputs.add(1);
+        int smallest = Calculator.findMin(inputs);
+        System.out.println("The smallest input int is " + smallest); // should be 1
     }
 }
