@@ -55,11 +55,12 @@ public class InMemoryCatalog implements Catalog {
         return item;
     }
 
-    // Returns a collections of items that match the supplied keyword
-    // basically a keyword search
-    // searches are cae insensitive
-
-    //a no match result should return empty collection (not null)
+    /* Returns a collections of items that match the supplied keyword.
+    * basically a keyword search
+    * A match is defined as an item whose title or artist contains the keyword.
+    * searches are case-insensitive
+    * a no match result should return empty collection (not null).
+    */
     @Override
     public Collection<MusicItem> findByKeyword(String keyword) {
         Collection<MusicItem> result = new ArrayList<>();
@@ -83,9 +84,9 @@ public class InMemoryCatalog implements Catalog {
         // return value
         Collection<MusicItem> result = new ArrayList<>();
 
-        for(MusicItem currentItem : catalogData)
-            if(currentItem.getMusicCategory().equals(category)){
-                result.add(currentItem);
+        for(MusicItem item : catalogData)
+            if(item.getMusicCategory().equals(category)){ // using == is okay for enum types
+                result.add(item);
             }
 
         return result;
